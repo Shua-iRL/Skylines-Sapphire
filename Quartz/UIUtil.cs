@@ -43,9 +43,9 @@ namespace Quartz
 		        Vector2 viewSize = uiView.GetScreenResolution();
 
 		        button.relativePosition = moduleClass == Skin.ModuleClass.MainMenu
-											  ? new Vector3(viewSize.x - 4.0f - button.width, 2.0f, 0.0f)
-											  : new Vector3(viewSize.x - 64.0f - button.width, 16.0f, 0.0f);
-	        }
+                                              ? new Vector3(viewSize.x - 4.0f - button.width, 2.0f, 0.0f)
+                                              : new Vector3(viewSize.x - 19.0f - button.width, 34.0f + button.height, 0.0f);
+            }
 			return button;
         }
 
