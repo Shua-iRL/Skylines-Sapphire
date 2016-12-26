@@ -290,9 +290,11 @@ namespace Quartz
 
 				Vector2 viewSize = uiView.GetScreenResolution();
 
-		        panel.relativePosition = _currentModuleClass == Skin.ModuleClass.MainMenu ? new Vector3(viewSize.x - 2.0f - panel.size.x, 34.0f) : new Vector3(viewSize.x - 2.0f - panel.size.x, 34.0f + 64.0f);
+                panel.relativePosition = _currentModuleClass == Skin.ModuleClass.MainMenu
+                    ? new Vector3(viewSize.x - 2.0f - panel.size.x, 34.0f)
+                    : new Vector3(viewSize.x - 2.0f - panel.size.x, 34.0f + 64.0f + 15.0f);
 
-				panel.name = "QuartzSkinManager";
+                panel.name = "QuartzSkinManager";
 
 		        var title = panel.AddUIComponent<UILabel>();
 				title.relativePosition = new Vector3(2.0f, 2.0f);
