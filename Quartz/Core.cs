@@ -61,7 +61,7 @@ namespace Quartz
 
 		public static PluginManager.PluginInfo MyInfo()
 		{
-			var quartzPlugin = PluginManager.instance.GetPluginsInfo().FirstOrDefault(p => (p.publishedFileID.AsUInt64 == 576970398 || (p.modPath.Contains(@"AppData\Local\") && p.name == "Quartz")));
+			var quartzPlugin = PluginManager.instance.GetPluginsInfo().FirstOrDefault(p => (p.publishedFileID.AsUInt64 == 888017364 || (p.modPath.Contains(@"AppData\Local\") && p.name == "Quartz")));
 			return quartzPlugin;
 		}
 
